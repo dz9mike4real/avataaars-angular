@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {AvatarStyle} from 'avataaars-angular';
+import {AvatarStyle, SkinColor} from 'avataaars-angular';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,9 +9,7 @@ export class AppComponent {
   extraStyle:any;
   title = 'avataaars-angular-example';
   avatarStyle = AvatarStyle.Circle;
-  constructor(){
-  this.extraStyle = {a:'asdfasdf'};
-    
-  }
+  skinColor = SkinColor.Black;
+  constructor(){}
  
 }

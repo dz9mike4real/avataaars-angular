@@ -2,7 +2,8 @@
 
   <avatar 
     [style]="extraStyle"
-    [avatarStyle]='avatarStyle'>
+    [avatarStyle]='avatarStyle'
+    [skinColor]="skinColor">
   </avatar>
   <div>
     <input type='radio' [(ngModel)]="avatarStyle" value='Circle' name='av' />
@@ -10,6 +11,5 @@
     <input type='radio' [(ngModel)]="avatarStyle" value='Transparent' name='av' />
     Transparent
   </div>
-
 
 </div>
