@@ -10,14 +10,6 @@ import { AvatarStyle} from '../../models/enums/avatarStyle.enum';
 export class AvatarComponent implements OnInit {
   @Input() style: object ={};
   @Input() avatarStyle = AvatarStyle.Circle;
-  
-  constructor() {
-   
-  }
-    
-  ngOnInit(): void {
-     console.log(this.avatarStyle);
-     console.log(this.style);
-  }
-
+  constructor() {}
+  ngOnInit(): void {}
 }
