@@ -1,19 +1,23 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AvatarStyle} from '../../models/enums/avatarStyle.enum';
 
 @Component({
-  selector: 'avataaar',
+  selector: 'avatar',
   templateUrl:'./avatar.component.html',
   styles: [
   ]
 })
 export class AvatarComponent implements OnInit {
-  @Input() avatarStyle : string ='';
+  @Input() style: object ={};
+  @Input() avatarStyle = AvatarStyle.Circle;
+  
   constructor() {
    
   }
     
   ngOnInit(): void {
      console.log(this.avatarStyle);
+     console.log(this.style);
   }
 
 }
