@@ -1,4 +1,15 @@
 <div>
-  This is app!
-  <avataaar></avataaar>
+
+  <avatar 
+    [style]="extraStyle"
+    [avatarStyle]='avatarStyle'
+    [skinColor]="skinColor">
+  </avatar>
+  <div>
+    <input type='radio' [(ngModel)]="avatarStyle" value='Circle' name='av' />
+    Circle
+    <input type='radio' [(ngModel)]="avatarStyle" value='Transparent' name='av' />
+    Transparent
+  </div>
+
 </div>

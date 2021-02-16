@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AvataaarsAngularComponent } from './avataaars-angular.component';
+import { SkinComponent } from './skin.component';
 
-describe('AvataaarsAngularComponent', () => {
-  let component: AvataaarsAngularComponent;
-  let fixture: ComponentFixture<AvataaarsAngularComponent>;
+describe('SkinComponent', () => {
+  let component: SkinComponent;
+  let fixture: ComponentFixture<SkinComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AvataaarsAngularComponent ]
+      declarations: [ SkinComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AvataaarsAngularComponent);
+    fixture = TestBed.createComponent(SkinComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
