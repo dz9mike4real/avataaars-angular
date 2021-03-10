@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import {SKIN_COLOR} from '../../models/constants/skinColor.constant';
 
 @Component({
   selector: '[skin]',
@@ -7,7 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 
 export class SkinComponent implements OnInit {
-  @Input() color = '';
+  @Input()color!: string;
+  colorValue!: string;
   constructor() { }
-  ngOnInit(): void {  }
+  ngOnInit(): void { 
+      this.colorValue = SKIN_COLOR[this.color]? SKIN_COLOR[this.color] :SKIN_COLOR['Light'];
+   }
+   
+  
 }
+

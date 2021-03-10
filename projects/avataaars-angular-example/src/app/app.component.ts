@@ -8,8 +8,8 @@ import {AvatarStyle, SkinColor} from 'avataaars-angular';
 export class AppComponent {
   extraStyle:any;
   title = 'avataaars-angular-example';
-  avatarStyle = AvatarStyle.Circle;
-  skinColor = SkinColor.Black;
+  avatarStyle = 'Circle';
+  skinColor = 'Brown';
   constructor(){}
  
 }

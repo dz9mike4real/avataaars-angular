@@ -1,6 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { AvatarStyle} from '../../models/enums/avatarStyle.enum';
-import { SkinColor} from '../../models/enums/skinColor.enum';
 @Component({
   selector: 'avatar',
   templateUrl:'./avatar.component.html',
@@ -9,8 +7,8 @@ import { SkinColor} from '../../models/enums/skinColor.enum';
 })
 export class AvatarComponent implements OnInit {
   @Input() style: object ={};
-  @Input() avatarStyle = AvatarStyle.Circle;
-  @Input() skinColor = SkinColor.Light;
+  @Input() avatarStyle!: string;
+  @Input() skinColor!: string;
   constructor() {}
   ngOnInit(): void {}
 }
